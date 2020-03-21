@@ -1,7 +1,6 @@
 package com.xinbo.cloud.common.vo.common;
 
 
-import com.xinbo.cloud.common.enums.MoneyChangeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

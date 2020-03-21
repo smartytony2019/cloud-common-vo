@@ -5,8 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -52,13 +51,13 @@ public class UserInfoVo {
      * 注册时间
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private List<LocalDateTime> regTime;
+    private Date regTime;
 
     /**
      * 登录时间
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private List<LocalDateTime> loginTime;
+    private Date loginTime;
 
     /**
      * 用户状态 0:正常,1:异常,2:停用
