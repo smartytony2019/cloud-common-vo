@@ -5,6 +5,7 @@ D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\merchanta
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\sport\SportServiceSearchVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\BaseRoleModuleVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\sport\SportResultSearchVo.java
+D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\merchanta\api\QueryRequestVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\DivideVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\sport\SportBetSearchVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\GameAddressVo.java
@@ -18,7 +19,6 @@ D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\sport\Spo
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\BaseModuleVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\BaseRolesVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\UserInfoVo.java
-D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\merchanta\bet\QueryRequestVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\sport\SportBetModifyVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\BaseUserRoleVo.java
 D:\work\cloud2\cloud-common-vo\src\main\java\com\xinbo\cloud\common\vo\common\UserVo.java
