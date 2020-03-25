@@ -30,8 +30,6 @@ public class UserInfoVo {
      */
     private String userName;
 
-    private String MerchantName;
-
     /**
      * 用户余额
      */
