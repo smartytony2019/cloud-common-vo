@@ -16,28 +16,28 @@ import javax.validation.constraints.NotEmpty;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QueryRequestVo  {
+public class QueryRequestVo {
 
     /**
      * 签名
      */
     @NotEmpty(message = "签名不能为空")
-    private String sign ;
+    private String sign;
     /**
-     *  日期时间戳
+     * 日期时间戳
      */
     @NotEmpty(message = "日期时间戳不能为空")
-    private String time ;
+    private String time;
     /**
      * 运营平台渠道
      */
     @NotEmpty(message = "平台渠道号不能为空")
-    private String channel ;
+    private String channel;
     /**
      * 游戏ID
      */
     @NotEmpty(message = "游戏ID不能为空")
-    private String gameId ;
+    private String gameId;
     /**
      * 查询开始时间
      */
@@ -61,5 +61,7 @@ public class QueryRequestVo  {
      */
     @Min(value = 0, message = "每页记录条数必须大于0")
     private int pageSize;
+
+    private String username;
 
 }
