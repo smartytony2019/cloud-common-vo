@@ -20,19 +20,19 @@ public class TranslateRequestVo extends PlatformApiRequestVo {
      */
     public String amount;
 
-    public String getMerchantSerial() {
-        return merchantSerial;
-    }
-
     public String getAmount() {
         return amount;
     }
 
-    public void setMerchantSerial(String merchantSerial) {
-        this.merchantSerial = merchantSerial;
-    }
-
     public void setAmount(String amount) {
         this.amount = amount;
+    }
+
+    public String getMerchantSerial() {
+        return merchantSerial;
+    }
+
+    public void setMerchantSerial(String merchantSerial) {
+        this.merchantSerial = merchantSerial;
     }
 }
