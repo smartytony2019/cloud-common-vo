@@ -30,7 +30,6 @@ public class PlatformApiRequestVo {
     /**
      * 会员帐号
      */
-    @NotEmpty(message = "会员帐号不能为空")
     private String username ;
     /**
      * 运营平台渠道
@@ -40,6 +39,5 @@ public class PlatformApiRequestVo {
     /**
      * 游戏ID
      */
-    @NotEmpty(message = "游戏ID不能为空")
     private String gameId ;
 }
