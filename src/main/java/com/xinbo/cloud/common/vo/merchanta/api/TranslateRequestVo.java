@@ -18,14 +18,13 @@ public class TranslateRequestVo extends PlatformApiRequestVo {
     /**
      * 转入金额 >0 保留2位小数
      */
-    @Min(value = 0, message = "转入金额不能小于0")
-    public float amount;
+    public String amount;
 
     public String getMerchantSerial() {
         return merchantSerial;
     }
 
-    public float getAmount() {
+    public String getAmount() {
         return amount;
     }
 
@@ -33,7 +32,7 @@ public class TranslateRequestVo extends PlatformApiRequestVo {
         this.merchantSerial = merchantSerial;
     }
 
-    public void setAmount(float amount) {
+    public void setAmount(String amount) {
         this.amount = amount;
     }
 }
