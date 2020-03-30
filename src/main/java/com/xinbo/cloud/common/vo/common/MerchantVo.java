@@ -55,7 +55,6 @@ public class MerchantVo {
     /**
      * 商户密码
      */
-    @NotEmpty(message = "商户密码不能为空")
     private String passWord;
 
 
