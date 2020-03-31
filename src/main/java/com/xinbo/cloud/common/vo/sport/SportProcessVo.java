@@ -18,11 +18,6 @@ import java.util.Date;
 public class SportProcessVo {
 
     /**
-     * 主键id
-     */
-    public String _id;
-
-    /**
      * 开始时间
      */
     public Date start_time;
@@ -33,23 +28,8 @@ public class SportProcessVo {
     public Date end_time;
 
     /**
-     * 启动线程
-     */
-    public int launch_num;
-
-    /**
-     * 完成线程
-     */
-    public int done_num;
-
-    /**
      * 线程类型
      */
     public String type;
-
-    /**
-     * 线程备注
-     */
-    public String remark;
 
 }

@@ -16,31 +16,13 @@ import lombok.NoArgsConstructor;
 public class SportAccountVo {
 
     /**
-     * 主键
-     */
-    public String _id;
-
-    /**
-     * 用户id
-     */
-    public String id;
-
-    /**
-     * 排序
-     */
-
-    public String sort;
-
-    /**
      * 用户名
      */
-
-    public String username;
+    private String username;
 
     /**
      * 是否有效
      */
-
-    public String is_alive;
+    private boolean is_alive;
 
 }
