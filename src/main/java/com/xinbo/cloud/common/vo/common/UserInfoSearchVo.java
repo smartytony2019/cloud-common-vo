@@ -5,41 +5,25 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.util.Date;
-import java.util.List;
 
 /**
- * @author 马仔
- * @date 2020/3/16 12:04
- * @desc 用户信息 vo
+ * @author 汉斯
+ * @date 2020/3/31 14:04
+ * @desc 用户查询 vo
  */
 
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserInfoVo {
-
-    /**
-     * 用户Id 对应前端
-     */
-    private String _userId;
+public class UserInfoSearchVo {
 
     /**
      * 用户名
      */
     private String userName;
-
-    /**
-     * 用户余额
-     */
-    private float money;
-
-    /**
-     * 用户冻结金额
-     */
-    private float frozen_money;
-
     /**
      * 商户编号
      */
@@ -56,10 +40,6 @@ public class UserInfoVo {
      * 登录IP
      */
     private String loginIp;
-    /**
-     * 密码
-     */
-    private String passWord;
     /**
      * 注册时间
      */

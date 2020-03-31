@@ -1,6 +1,7 @@
 package com.xinbo.cloud.common.vo.sport;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * @date 2020/03/16
  * @desc 体育注单查询VO
  */
+@Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
