@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * @author 马仔
+ * @author 汉斯
  * @date 2020/3/16 12:04
- * @desc 用户帐变 vo
+ * @desc 用户帐变查询 vo
  */
 
 @Data
@@ -46,8 +46,13 @@ public class UserMoneyFlowSearchVo {
     private String merchantCode;
 
     /**
-     * 帐变时间
+     * 帐变开始时间
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date operationTime;
+    private Date operationStartTime;
+    /**
+     * 帐变结束时间
+     */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date operationEndTime;
 }
