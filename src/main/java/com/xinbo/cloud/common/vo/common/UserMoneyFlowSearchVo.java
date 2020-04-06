@@ -19,7 +19,10 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserMoneyFlowSearchVo {
-
+    /**
+     * 用户名
+     */
+    private long uid;
     /**
      * 用户名
      */

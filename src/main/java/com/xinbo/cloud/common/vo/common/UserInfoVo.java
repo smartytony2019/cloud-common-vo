@@ -15,7 +15,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserInfoVo {
-
+    /**
+     * 用户ID
+     */
+    private long userId;
     /**
      * 用户名
      */
@@ -45,6 +48,9 @@ public class UserInfoVo {
      * 用户类型(0:正常  2:试玩)
      */
     private int type;
+    /**
+     * 数据节点
+     */
     private int dataNode;
 
 }

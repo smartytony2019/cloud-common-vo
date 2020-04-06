@@ -22,7 +22,7 @@ public class UserMoneyFlowVo {
     /**
      * 用户名
      */
-    private String userName;
+    private long uid;
 
     /**
      * 帐变类型

@@ -21,7 +21,7 @@ public class UpdateUserInfoMoneyVo {
     /**
      * 账变用户名
      */
-    private String userName;
+    private long userId;
 
     /**
      * 操作金额
