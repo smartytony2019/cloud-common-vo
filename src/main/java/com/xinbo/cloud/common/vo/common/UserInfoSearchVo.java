@@ -62,9 +62,4 @@ public class UserInfoSearchVo {
      */
     private int type;
 
-    /**
-     * 数据节点(枚举:EnumMyCatDataNode)
-     */
-    private int dataNode;
-
 }
