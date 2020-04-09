@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import java.io.Serializable;
 
 /**
  * @author 熊二
@@ -17,7 +18,7 @@ import javax.validation.constraints.NotEmpty;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExpireVo {
+public class ExpireVo implements Serializable {
 
     @NotEmpty(message = "key不能为空")
     private String key;

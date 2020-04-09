@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @author 马仔
  * @date 2020/3/18 16:41
@@ -16,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateUserInfoMoneyVo {
+public class UpdateUserInfoMoneyVo implements Serializable {
 
     /**
      * 账变用户名

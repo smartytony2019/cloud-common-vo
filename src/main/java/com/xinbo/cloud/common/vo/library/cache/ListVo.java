@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -14,7 +15,7 @@ import java.util.List;
  */
 @Data
 @Builder
-public class ListVo {
+public class ListVo implements Serializable {
 
     @NotEmpty(message = "key不能为空")
     private String key;
