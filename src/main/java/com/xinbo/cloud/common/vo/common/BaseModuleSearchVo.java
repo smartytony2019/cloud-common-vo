@@ -8,20 +8,14 @@ import lombok.NoArgsConstructor;
 /**
  * @author 汉斯
  * @date 2020/4/13 9:52
- * @desc 后台菜单模块 vo
+ * @desc 后台菜单模块查询 vo
  */
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseModuleVo {
-
-    /**
-     * 模块Id
-     */
-    private long moduleId;
-
+public class BaseModuleSearchVo {
     /**
      * 父类Id
      */
@@ -33,49 +27,21 @@ public class BaseModuleVo {
     private String title;
 
     /**
-     * 链接
-     */
-    private String link;
-
-    /**
-     * 排序
-     */
-    private int sort;
-
-    /**
      * 是否禁用
      */
-    private boolean nullity;
+    private Boolean nullity;
 
     /**
      * 是否菜单
      */
-    private int isMenu;
-
-    /**
-     * 描述
-     */
-    private String description;
-
-    /**
-     * 管理区
-     */
-    private int managerPopedom;
-
-    /**
-     * 图标
-     */
-    private String icon;
-
+    private Integer isMenu;
     /**
      * 顶级Id
      */
     private long topLevelId;
-
     /**
      * 是否代理
      */
-    private int isMerchant;
-
+    private Integer isMerchant;
 
 }

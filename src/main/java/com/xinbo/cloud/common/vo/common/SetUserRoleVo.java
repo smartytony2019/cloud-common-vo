@@ -5,31 +5,28 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @author 马仔
- * @date 2020/3/21 9:53
- * @desc 后台用户角色 vo
- */
+import java.util.List;
 
+/**
+ * @author 汉斯
+ * @date 2020/4/13 20:15
+ * @desc 设置用户角色VO
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseUserRoleVo {
-
+public class SetUserRoleVo {
     /**
-     * 用户id
+     * 用户ID
      */
     private long userId;
-
     /**
-     * 角色id
+     * 角色列表
      */
-    private long roleId;
-
+    private List<BaseRolesVo> roles;
     /**
-     * 商户id
+     * 管理员类型
      */
-    private int merchantId;
-
+    private int typeId;
 }

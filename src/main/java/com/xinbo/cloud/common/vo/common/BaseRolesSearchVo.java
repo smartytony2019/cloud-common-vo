@@ -15,12 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseRolesVo {
-
-    /**
-     * 角色id
-     */
-    private long roleId;
+public class BaseRolesSearchVo {
 
     /**
      * 角色名称
@@ -28,13 +23,8 @@ public class BaseRolesVo {
     private String roleName;
 
     /**
-     * 角色描述
-     */
-    private String description;
-
-    /**
      * 角色类型
      */
-    private int typeId;
+    private Integer typeId;
 
 }

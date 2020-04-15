@@ -5,31 +5,24 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @author 马仔
- * @date 2020/3/21 9:53
- * @desc 后台角色模块 vo
- */
+import java.util.List;
 
+/**
+ * @author 汉斯
+ * @date 2020/4/13 17:31
+ * @desc 设置角色菜单权限VO
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseRoleModuleVo {
-
+public class SaveRolePermissionVo {
     /**
-     * 角色id
+     * 角色ID
      */
     private long roleId;
-
     /**
-     * 模块id
+     * 菜单列表
      */
-    private long moduleId;
-
-    /**
-     * 状态标识
-     */
-    private int stateFlag;
-
+    private List<BaseModuleVo> modulePermissions;
 }
