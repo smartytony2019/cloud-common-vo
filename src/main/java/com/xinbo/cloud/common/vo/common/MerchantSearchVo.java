@@ -8,28 +8,28 @@ import lombok.NoArgsConstructor;
 /**
  * @author 汉斯
  * @date 2020/3/11 9:50
- * @desc 商户抽点配置VO
+ * @desc 商户查询VO
  */
 @Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class DivideVo {
+public class MerchantSearchVo {
 
     /**
-     * id主键
-     */
-    private Long id;
-    /**
-     * 商户code
+     * 商户编号
      */
     private String merchantCode;
     /**
-     *  公司id
+     * 商户名称
      */
-    private int company;
+    private String merchantName;
     /**
-     * 抽成比例, 百分比
+     * 商户状态
      */
-    private double proportionate;
+    private Boolean status;
+    /**
+     * 数据节点(枚举:EnumMyCatDataNode)
+     */
+    private Integer dataNode;
 }

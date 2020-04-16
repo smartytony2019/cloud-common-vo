@@ -41,25 +41,29 @@ public class UserInfoSearchVo {
      */
     private String loginIp;
     /**
-     * 注册时间
+     * 对应枚举DateTypeEnum   1：登录时间 2：注册时间
+     */
+    private  int dateType;
+    /**
+     * 开始时间
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date regTime;
+    private Date startTime;
 
     /**
-     * 登录时间
+     * 结束时间
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date loginTime;
+    private Date endTime;
 
     /**
      * 用户状态 0:正常,1:异常,2:停用
      */
-    private int status;
+    private Integer status;
 
     /**
      * 用户类型(0:正常  2:试玩)
      */
-    private int type;
+    private Integer type;
 
 }

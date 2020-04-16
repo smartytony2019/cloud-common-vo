@@ -22,7 +22,7 @@ public class MyMoneyFlowSearchVo {
     /**
      * 帐变类型
      */
-    private int item;
+    private Integer item;
     /**
      * 商户订单号
      */

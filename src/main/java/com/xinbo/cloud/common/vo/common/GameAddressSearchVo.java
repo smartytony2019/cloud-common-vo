@@ -8,28 +8,29 @@ import lombok.NoArgsConstructor;
 /**
  * @author 汉斯
  * @date 2020/3/11 9:50
- * @desc 商户抽点配置VO
+ * @desc 游戏地址配置查询VO
  */
 @Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class DivideVo {
+public class GameAddressSearchVo {
+    /**
+     * 游戏名称
+     */
+    private String gameName;
 
     /**
-     * id主键
+     * 是否启用
      */
-    private Long id;
+    private Boolean gameEnable;
     /**
-     * 商户code
+     * 游戏类型
      */
-    private String merchantCode;
+    private Integer gameType;
+
     /**
-     *  公司id
+     * 客户端类型(1.PC 2.H5)
      */
-    private int company;
-    /**
-     * 抽成比例, 百分比
-     */
-    private double proportionate;
+    private Integer clientType;
 }

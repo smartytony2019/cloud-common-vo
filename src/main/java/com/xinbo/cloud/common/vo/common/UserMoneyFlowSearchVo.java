@@ -31,7 +31,7 @@ public class UserMoneyFlowSearchVo {
     /**
      * 帐变类型
      */
-    private int item;
+    private Integer item;
 
     /**
      * 商户订单号
@@ -41,7 +41,7 @@ public class UserMoneyFlowSearchVo {
     /**
      * 数据节点
      */
-    private int dataNode;
+    private Integer dataNode;
 
     /**
      * 商户号
