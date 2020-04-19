@@ -1,4 +1,4 @@
-package com.xinbo.cloud.common.vo.sport;
+package com.xinbo.cloud.common.vo.hg;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SportAccountVo {
+public class AccountSearchVo {
 
     /**
      * 用户名
@@ -23,6 +23,6 @@ public class SportAccountVo {
     /**
      * 是否有效
      */
-    private boolean is_alive;
+    private Boolean isAlive;
 
 }
