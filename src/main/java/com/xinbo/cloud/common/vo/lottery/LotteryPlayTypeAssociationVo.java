@@ -20,25 +20,17 @@ public class LotteryPlayTypeAssociationVo {
      */
     private Long id;
     /**
-     * 彩种类型ID
+     * 彩种类型编号
      */
-    private Long categoryId;
+    private int categoryCode;
     /**
      * 彩种类型名称
      */
     private String categoryName;
     /**
-     * 彩种id
-     */
-    private Long lotteryTypeId;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;
-    /**
-     * 彩种类型玩法ID
-     */
-    private Long categoryPlayTypeId;
     /**
      * 彩种类型玩法名称
      */

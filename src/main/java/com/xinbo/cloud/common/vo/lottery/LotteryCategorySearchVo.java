@@ -15,6 +15,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotteryCategorySearchVo {
     /**
+     * 彩种类型编号
+     */
+    private int code;
+    /**
      * 彩种类型名称
      */
     private String name;
@@ -29,7 +33,7 @@ public class LotteryCategorySearchVo {
     /**
      * 默认玩法  1:信用玩法 2:官方玩法 3:信用玩法及官方玩法
      */
-    private Integer playType;
+    private Integer playMode;
 
     /**
      * 是否重复开奖号码 1.重复  0.不重复

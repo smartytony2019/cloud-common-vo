@@ -28,13 +28,13 @@ public class LotteryRuleVo {
      */
     private int categoryLottery;
     /**
-     * 彩种类型ID
+     * 彩种类型编号
      */
-    private Long categoryId;
+    private int categoryCode;
     /**
-     * 关联键(彩种类型id, 彩种code)
+     *  彩种code
      */
-    private Long relatedKey;
+    private int lotteryTypeCode;
     /**
      * 规则内容
      */

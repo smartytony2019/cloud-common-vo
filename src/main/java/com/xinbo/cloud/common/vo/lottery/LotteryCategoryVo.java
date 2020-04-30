@@ -18,15 +18,15 @@ public class LotteryCategoryVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种类型名称
      */
     private String name;
     /**
-     * 配置ID
+     * 彩种类型编号
      */
-    private Long configId;
+    private int code;
     /**
      * 彩种类型英文名称
      */
@@ -34,7 +34,7 @@ public class LotteryCategoryVo {
     /**
      * 排序编号
      */
-    private String sort;
+    private int sort;
     /**
      * 是否启用
      */
@@ -46,7 +46,7 @@ public class LotteryCategoryVo {
     /**
      * 默认玩法  1:信用玩法 2:官方玩法 3:信用玩法及官方玩法
      */
-    private int playType;
+    private int playMode;
     /**
      * H5图标
      */

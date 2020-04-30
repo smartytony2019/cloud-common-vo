@@ -20,10 +20,6 @@ public class LotteryTypeTimeRulesSearchVo {
      */
     private Long id;
     /**
-     * 彩种ID
-     */
-    private Long lotteryTypeId;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;

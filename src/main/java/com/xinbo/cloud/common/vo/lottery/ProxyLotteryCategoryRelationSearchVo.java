@@ -24,9 +24,9 @@ public class ProxyLotteryCategoryRelationSearchVo {
      */
     private String merchantCode;
     /**
-     * 彩种类型id
+     * 彩种类型编号
      */
-    private Long categoryId;
+    private int categoryCode;
     /**
      * 开关   0.禁用  1.启用
      */

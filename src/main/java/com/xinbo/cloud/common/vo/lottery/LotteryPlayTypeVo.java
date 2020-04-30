@@ -20,10 +20,6 @@ public class LotteryPlayTypeVo {
      */
     private Long id;
     /**
-     * 彩种ID
-     */
-    private Long lotteryTypeId;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;
@@ -63,10 +59,6 @@ public class LotteryPlayTypeVo {
      * 玩法类型(1.信用玩法 2.官方玩法 3) 对应枚举 LotteryPlayModeEnum
      */
     private int playMode;
-    /**
-     * 彩种类型玩法id
-     */
-    private Long categoryPlayTypeId;
     /**
      * 彩种类型玩法编号
      */

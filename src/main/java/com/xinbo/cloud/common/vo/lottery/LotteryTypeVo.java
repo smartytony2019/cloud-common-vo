@@ -1,10 +1,13 @@
 package com.xinbo.cloud.common.vo.lottery;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import java.util.Date;
 
 /**
@@ -20,11 +23,11 @@ public class LotteryTypeVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
-     * 彩种类型ID
+     * 彩种类型编号
      */
-    private Long categoryId;
+    private int categoryCode;
     /**
      * 彩种编码
      */
@@ -101,7 +104,7 @@ public class LotteryTypeVo {
     /**
      * 开奖算法类型
      */
-    private int issueAlgorithmType;
+    private long algorithmId;
     /**
      * 期号销售时间类型  1.按年月日 2.年 3.累加
      */
@@ -111,20 +114,28 @@ public class LotteryTypeVo {
      */
     private int ballNumber;
     /**
+     * 供选球集合示例 1,2,4,5,6,7,8
+     */
+    private String selectBallItem;
+    /**
      * 销售开始时间
      */
-    private Date selectBallItem;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date salesStartTime;
     /**
      * 销售结束时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date salesEndTime;
     /**
      * 开始时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date startTime;
     /**
      * 结束时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date endTime;
 
     /**
@@ -142,6 +153,6 @@ public class LotteryTypeVo {
     /**
      * 起始期号
      */
-    private Long startIssue;
+    private long startIssue;
 
 }

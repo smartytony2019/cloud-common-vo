@@ -20,10 +20,6 @@ public class LotteryKillRateSearchVo {
      */
     private Long id;
     /**
-     * 彩种id
-     */
-    private Long lotteryTypeId;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;

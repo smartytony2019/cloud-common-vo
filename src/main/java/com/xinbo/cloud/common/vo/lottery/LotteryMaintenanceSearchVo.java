@@ -22,13 +22,9 @@ public class LotteryMaintenanceSearchVo {
      */
     private Long id;
     /**
-     * 彩种id
+     * 彩种类型编号
      */
-    private Long lotteryTypeId;
-    /**
-     * 彩种类型id
-     */
-    private Long categoryId;
+    private int categoryCode;
     /**
      * 彩种编号
      */

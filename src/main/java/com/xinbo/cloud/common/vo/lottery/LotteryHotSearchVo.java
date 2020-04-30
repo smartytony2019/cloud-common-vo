@@ -24,13 +24,9 @@ public class LotteryHotSearchVo {
      */
     private String merchantCode;
     /**
-     * 彩种类型id
+     * 彩种类型编号
      */
-    private Long categoryId;
-    /**
-     * 彩种id
-     */
-    private Long lotteryTypeId;
+    private int categoryCode;
     /**
      * 彩种编号
      */

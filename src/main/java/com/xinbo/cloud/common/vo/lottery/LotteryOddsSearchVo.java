@@ -20,17 +20,9 @@ public class LotteryOddsSearchVo {
      */
     private Long id;
     /**
-     * 彩种ID
-     */
-    private Long lotteryTypeId;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;
-    /**
-     * 彩种玩法编号
-     */
-    private Long playTypeId;
     /**
      * 理论赔率（元）
      */

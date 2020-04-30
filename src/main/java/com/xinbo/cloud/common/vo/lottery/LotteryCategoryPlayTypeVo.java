@@ -21,9 +21,9 @@ public class LotteryCategoryPlayTypeVo {
      */
     private Long id;
     /**
-     * 彩种类型ID
+     * 彩种类型编号
      */
-    private Long categoryId;
+    private int categoryCode;
     /**
      * 彩种类型名称
      */
