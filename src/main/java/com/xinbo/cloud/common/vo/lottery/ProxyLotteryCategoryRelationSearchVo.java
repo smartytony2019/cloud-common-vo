@@ -16,10 +16,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ProxyLotteryCategoryRelationSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 商户编号
      */
     private String merchantCode;
@@ -30,14 +26,5 @@ public class ProxyLotteryCategoryRelationSearchVo {
     /**
      * 开关   0.禁用  1.启用
      */
-    private boolean enable;
-    /**
-     * 排序号
-     */
-    private int sort;
-
-    /**
-     * 备注说明
-     */
-    private String info;
+    private Boolean enable;
 }
