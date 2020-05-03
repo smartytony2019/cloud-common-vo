@@ -19,7 +19,7 @@ public class LotteryCategoryPlayTypeVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种类型编号
      */
@@ -39,7 +39,7 @@ public class LotteryCategoryPlayTypeVo {
     /**
      * 彩种玩法模式
      */
-    private int playTypeMode;
+    private int playMode;
     /**
      * 是否启用
      */

@@ -20,12 +20,12 @@ public class LuckyCodeVo {
     /**
      * 标识id
      */
-    private Long id;
+    private long id;
 
     /**
      * 期号
      */
-    private Long sn;
+    private long sn;
 
     /**
      * 开奖号码

@@ -16,19 +16,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotteryPlayTypeSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;
     /**
-     * 彩种名称
-     */
-    private String lotteryTypeName;
-    /**
-     * 彩种玩法ID
+     * 彩种玩法
      */
     private String playName;
     /**
@@ -40,21 +32,9 @@ public class LotteryPlayTypeSearchVo {
      */
     private int superCode;
     /**
-     * 父级id
-     */
-    private Long pid;
-    /**
-     * 层级
-     */
-    private int level;
-    /**
-     * 排序编号
-     */
-    private int sort;
-    /**
      * 是否启用
      */
-    private boolean enable;
+    private Boolean enable;
     /**
      * 玩法类型(1.信用玩法 2.官方玩法 3) 对应枚举 LotteryPlayModeEnum
      */
@@ -64,31 +44,11 @@ public class LotteryPlayTypeSearchVo {
      */
     private int categoryPlayTypeCode;
     /**
-     * 彩种类型玩法名称
-     */
-    private String categoryPlayTypeName;
-    /**
-     * 范例
-     */
-    private String example;
-    /**
-     * 中奖说明
-     */
-    private String luckyInfo;
-    /**
-     * 应用算法id
-     */
-    private Long algorithmId;
-    /**
      * 是否有下级
      */
-    private boolean isHasChildren;
+    private Boolean isHasChildren;
     /**
      * 是否是菜单栏
      */
-    private boolean display;
-    /**
-     * 注数验证格式
-     */
-    private String verifyFormat;
+    private Boolean display;
 }

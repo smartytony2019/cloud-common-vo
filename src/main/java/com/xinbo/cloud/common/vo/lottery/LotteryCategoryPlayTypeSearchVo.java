@@ -17,35 +17,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotteryCategoryPlayTypeSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 彩种类型编号
      */
     private int categoryCode;
     /**
-     * 彩种类型名称
-     */
-    private String categoryName;
-    /**
-     * 彩种玩法名称
-     */
-    private String playTypeName;
-    /**
-     * 彩种玩法编号
-     */
-    private int playTypeCode;
-    /**
      * 彩种玩法模式
      */
-    private int playTypeMode;
+    private int playMode;
     /**
      * 是否启用
      */
-    private boolean enable;
-    /**
-     * 是否启用
-     */
-    private int sort;
+    private Boolean enable;
 }

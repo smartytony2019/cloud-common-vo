@@ -18,7 +18,7 @@ public class AgentLotteryPlayTypeVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 代理商户编号
      */

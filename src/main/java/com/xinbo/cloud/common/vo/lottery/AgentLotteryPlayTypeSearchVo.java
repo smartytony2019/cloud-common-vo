@@ -16,10 +16,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AgentLotteryPlayTypeSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 代理商户编号
      */
     private String merchantCode;
@@ -32,25 +28,16 @@ public class AgentLotteryPlayTypeSearchVo {
      */
     private int lotteryTypeCode;
     /**
-     * 彩种玩法编号
+     * 彩种模式
      */
-    private int playTypeCode;
+    private Integer playMode;
     /**
      * 彩种玩法名称
      */
     private String playTypeName;
     /**
-     * 彩种玩法编号
-     */
-    private int playMode;
-
-    /**
      * 排序号
      */
-    private int sort;
-    /**
-     * 排序号
-     */
-    private boolean enable;
+    private Boolean enable;
 
 }

@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author 汉斯
@@ -17,60 +18,24 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LuckyCodeSearchVo {
-    /**
-     * 标识id
-     */
-    private Long id;
 
     /**
      * 期号
      */
-    private Long sn;
-
-    /**
-     * 开奖号码
-     */
-    private String code;
+    private long sn;
 
     /**
      * 彩种编号
      */
     private int lotteryTypeCode;
-
+    /**
+     * 时间
+     */
+    private int timeType;
     /**
      * 开奖时间
      */
-    private Date actionTime;
-
-    /**
-     * 投注总额
-     */
-    private float betCoin;
-
-    /**
-     * 和局总额
-     */
-    private float heCoin;
-
-    /**
-     * 盈亏总额
-     */
-    private float luckyCoin;
-
-    /**
-     * 是否计算
-     */
-    private boolean isSettle;
-
-    /**
-     * 预留号码
-     */
-    private String reserveCode;
-    /**
-     * 当前遗漏
-     */
-    private String missing;
-
+    private List<Date> times;
     /**
      * 商户号
      */

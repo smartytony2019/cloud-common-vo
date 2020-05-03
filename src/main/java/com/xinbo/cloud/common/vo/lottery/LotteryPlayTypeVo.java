@@ -18,7 +18,7 @@ public class LotteryPlayTypeVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种编号
      */
@@ -42,7 +42,7 @@ public class LotteryPlayTypeVo {
     /**
      * 父级id
      */
-    private Long pid;
+    private long pid;
     /**
      * 层级
      */
@@ -78,7 +78,7 @@ public class LotteryPlayTypeVo {
     /**
      * 应用算法id
      */
-    private Long algorithmId;
+    private long algorithmId;
     /**
      * 是否有下级
      */

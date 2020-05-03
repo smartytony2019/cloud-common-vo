@@ -18,11 +18,15 @@ public class AgentLotteryTypeVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 代理商户编号
      */
     private String merchantCode;
+    /**
+     * 彩种类型编号
+     */
+    private int categoryCode;
     /**
      * 彩种编号
      */
