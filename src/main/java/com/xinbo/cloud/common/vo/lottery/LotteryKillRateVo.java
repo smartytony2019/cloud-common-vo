@@ -18,7 +18,11 @@ public class LotteryKillRateVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
+    /**
+     * 彩种类型编号
+     */
+    private int categoryCode;
     /**
      * 彩种编号
      */

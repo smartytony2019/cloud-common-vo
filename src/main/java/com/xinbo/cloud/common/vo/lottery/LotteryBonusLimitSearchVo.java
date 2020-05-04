@@ -16,10 +16,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotteryBonusLimitSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 彩种类型编号
      */
     private int categoryCode;
@@ -28,11 +24,7 @@ public class LotteryBonusLimitSearchVo {
      */
     private int lotteryTypeCode;
     /**
-     * 最大中奖金额
-     */
-    private float maxBonusLimit;
-    /**
      * 状态
      */
-    private int status;
+    private Integer status;
 }

@@ -16,45 +16,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotteryOddsSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;
     /**
-     * 理论赔率（元）
+     * 彩种玩法编号
      */
-    private float odds;
-    /**
-     * 赔率阀值
-     */
-    private float oddsThreshold;
-    /**
-     * 最高赔率
-     */
-    private float maxOdds;
-    /**
-     * 最低赔率
-     */
-    private float minOdds;
-    /**
-     * 信用赔率
-     */
-    private float creditLimit;
-    /**
-     * 单注最大（元）
-     */
-    private float maxSingle;
-    /**
-     * 单注最小（元）
-     */
-    private float minSingle;
-    /**
-     * 单项最大(元)
-     */
-    private float maxIndividual;
+    private int playTypeCode;
     /**
      * 商户编号
      */

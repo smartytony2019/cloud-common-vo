@@ -5,16 +5,18 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 /**
  * @author 汉斯
  * @date 2020/4/28 11:14
- * @desc 彩种玩法赔率配置
+ * @desc 批量修改彩种玩法赔率配置的VO类
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryOddsVo {
+public class BatchAddLotteryOddsVo {
     /**
      * 主键
      */
@@ -63,4 +65,9 @@ public class LotteryOddsVo {
      * 商户编号
      */
     private String merchantCode;
+
+    /**
+     *
+     */
+    private List<BatchAddLotteryOddsVo> childList;
 }

@@ -1,5 +1,6 @@
 package com.xinbo.cloud.common.vo.lottery;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,63 +19,28 @@ import java.util.Date;
 @AllArgsConstructor
 public class LotteryPresetRecordSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 商户编号
      */
     private String merchantCode;
     /**
+     * 彩种类型编码
+     */
+    private int categoryCode;
+    /**
      * 彩种编码
      */
     private int lotteryTypeCode;
+
     /**
-     * 期号
+     * 开始时间
      */
-    private Long issueNumber;
-    /**
-     * 预设号码集合
-     */
-    private String presetNumberItem;
-    /**
-     * 销售开始时间
-     */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date startTime;
     /**
-     * 销售结束时间
+     * 结束时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date endTime;
-    /**
-     * 封盘时间
-     */
-    private Date sealTime;
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-    /**
-     * 创建人名称
-     */
-    private String createUserName;
-    /**
-     * 创建人id
-     */
-    private Long createUserId;
-    /**
-     * 预设结果号码
-     */
-    private int presetResultNumber;
-    /**
-     * 开奖结果
-     */
-    private String lotteryResult;
-    /**
-     * 开奖时间
-     */
-    private Date luckyTime;
-    /**
-     * 预设记录所属时间
-     */
-    private Date recordTime;
+
+
 }

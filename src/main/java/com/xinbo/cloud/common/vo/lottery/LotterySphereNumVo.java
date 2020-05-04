@@ -18,7 +18,7 @@ public class LotterySphereNumVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种编号
      */
@@ -28,9 +28,9 @@ public class LotterySphereNumVo {
      */
     private String lotteryTypeName;
     /**
-     * 彩种玩法ID
+     * 彩种玩法编号
      */
-    private Long playTypeId;
+    private int playTypeCode;
     /**
      * 彩种玩法名称
      */

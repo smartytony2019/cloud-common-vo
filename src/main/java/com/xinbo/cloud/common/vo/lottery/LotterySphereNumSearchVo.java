@@ -16,10 +16,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotterySphereNumSearchVo {
     /**
-     * 主键
-     */
-    private Long id;
-    /**
      * 彩种编号
      */
     private int lotteryTypeCode;
@@ -28,19 +24,12 @@ public class LotterySphereNumSearchVo {
      */
     private String lotteryTypeName;
     /**
-     * 彩种玩法ID
+     * 彩种玩法编号
      */
-    private Long playTypeId;
+    private int playTypeCode;
     /**
      * 彩种玩法名称
      */
     private String playTypeName;
-    /**
-     * 最大球数
-     */
-    private int maxSphereNum;
-    /**
-     * 限制球数
-     */
-    private int limitSphereNum;
+
 }

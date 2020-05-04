@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 /**
  * @author 汉斯
  * @date 2020/4/28 11:11
- * @desc 彩种杀率表
+ * @desc 彩种杀率查询VO
  */
 @Data
 @Builder
@@ -16,9 +16,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotteryKillRateSearchVo {
     /**
-     * 主键
+     * 彩种类型编号
      */
-    private Long id;
+    private int categoryCode;
     /**
      * 彩种编号
      */
@@ -27,28 +27,14 @@ public class LotteryKillRateSearchVo {
      * 商户编号
      */
     private String merchantCode;
-    /**
-     * 杀率
-     */
-    private float killRate;
+
     /**
      * 是否开启随机开奖
      */
-    private boolean isRandomLottery;
-    /**
-     * 随机开奖期数
-     */
-    private int randomNumberPeriods;
+    private Boolean isRandomLottery;
+
     /**
      * 是否添加奖金池
      */
-    private boolean isAddBonusPool;
-    /**
-     * 奖金池金额
-     */
-    private float bonusPoolAmount;
-    /**
-     * 奖金池发放规则
-     */
-    private String bonusPoolRule;
+    private Boolean isAddBonusPool;
 }

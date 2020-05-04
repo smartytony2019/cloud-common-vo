@@ -19,9 +19,9 @@ import java.util.Date;
 @AllArgsConstructor
 public class LotteryTypeSearchVo {
     /**
-     * 彩种类型ID
+     * 彩种类型编号
      */
-    private long categoryId;
+    private int categoryCode;
     /**
      * 彩种编码
      */

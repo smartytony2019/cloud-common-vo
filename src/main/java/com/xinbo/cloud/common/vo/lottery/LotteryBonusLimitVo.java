@@ -18,7 +18,7 @@ public class LotteryBonusLimitVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种类型编号
      */

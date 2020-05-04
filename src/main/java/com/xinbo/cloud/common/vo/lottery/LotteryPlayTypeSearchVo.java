@@ -16,6 +16,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LotteryPlayTypeSearchVo {
     /**
+     * 彩种类型编号
+     */
+    private int categoryCode;
+    /**
      * 彩种编号
      */
     private int lotteryTypeCode;
@@ -32,6 +36,10 @@ public class LotteryPlayTypeSearchVo {
      */
     private int superCode;
     /**
+     * 层级
+     */
+    private int level;
+    /**
      * 是否启用
      */
     private Boolean enable;
@@ -42,7 +50,7 @@ public class LotteryPlayTypeSearchVo {
     /**
      * 彩种类型玩法编号
      */
-    private int categoryPlayTypeCode;
+    private int playTypeCategoryCode;
     /**
      * 是否有下级
      */

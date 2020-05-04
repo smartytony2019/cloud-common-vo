@@ -1,5 +1,6 @@
 package com.xinbo.cloud.common.vo.lottery;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,7 +21,7 @@ public class LotteryMaintenanceVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种类型编号
      */
@@ -36,10 +37,12 @@ public class LotteryMaintenanceVo {
     /**
      * 开始时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date beginTime;
     /**
      * 结束时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date endTime;
     /**
      * 类型 1公休2维护

@@ -1,5 +1,6 @@
 package com.xinbo.cloud.common.vo.lottery;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,7 +21,7 @@ public class LotteryIssueVo {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种类型编号
      */
@@ -32,14 +33,16 @@ public class LotteryIssueVo {
     /**
      * 期号
      */
-    private Long issue;
+    private long issue;
     /**
      * 开盘时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date openTime;
     /**
      * 结束时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date closeTime;
     /**
      * 本期结果
@@ -52,6 +55,7 @@ public class LotteryIssueVo {
     /**
      * 开奖时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date prizeTime;
 
 }

@@ -26,6 +26,10 @@ public class LotteryPresetRecordVo {
      */
     private String merchantCode;
     /**
+     * 彩种类型编码
+     */
+    private int categoryCode;
+    /**
      * 彩种编码
      */
     private int lotteryTypeCode;
