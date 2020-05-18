@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @author 汉斯
  * @date 2020/4/30 15:25
@@ -14,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AgentLotteryTypeSearchVo {
+public class AgentLotteryTypeSearchVo implements Serializable {
     /**
      * 代理商户编号
      */

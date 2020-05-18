@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @author 汉斯
  * @date 2020/4/28 11:11
@@ -14,37 +16,21 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryRuleSearchVo {
-    /**
-     * 主键
-     */
-    private Long id;
+public class LotteryRuleSearchVo implements Serializable {
     /**
      * 玩法类型(1:官方,2:信用)
      */
-    private int playModel;
+    private int playMode;
     /**
      * 彩种类型, 彩种(1:彩种类型, 2:彩种)
      */
     private int categoryLottery;
     /**
-     * 彩种类型编号
+     * 关联键(彩种类型code, 彩种code)
      */
-    private int categoryCode;
-    /**
-     *  彩种code
-     */
-    private int lotteryTypeCode;
-    /**
-     * 规则内容
-     */
-    private String ruleContent;
+    private int relatedKey;
     /**
      * 是否启用
      */
-    private boolean enable;
-    /**
-     * 是否启用
-     */
-    private int sort;
+    private Boolean enable;
 }

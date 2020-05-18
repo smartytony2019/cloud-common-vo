@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @author 汉斯
  * @date 2020/4/28 11:15
@@ -14,11 +16,15 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryPlayTypeVo {
+public class LotteryPlayTypeVo implements Serializable {
     /**
      * 主键
      */
     private long id;
+    /**
+     * 彩种类型编号
+     */
+    private int categoryCode;
     /**
      * 彩种编号
      */
@@ -62,11 +68,11 @@ public class LotteryPlayTypeVo {
     /**
      * 彩种类型玩法编号
      */
-    private int categoryPlayTypeCode;
+    private int playTypeCategoryCode;
     /**
      * 彩种类型玩法名称
      */
-    private String categoryPlayTypeName;
+    private String playTypeCategoryName;
     /**
      * 范例
      */
@@ -76,9 +82,9 @@ public class LotteryPlayTypeVo {
      */
     private String luckyInfo;
     /**
-     * 应用算法id
+     * 应用算法Code
      */
-    private long algorithmId;
+    private int algorithmCode;
     /**
      * 是否有下级
      */

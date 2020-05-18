@@ -6,29 +6,29 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
 import java.util.Date;
 
 /**
  * @author 汉斯
- * @date 2020/4/28 11:14
- * @desc 彩种维护记录表
+ * @date 2020/5/11 16:19
+ * @desc 彩种当期期号或销售时间修改VO
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryMaintenanceSearchVo implements Serializable {
-    /**
-     * 彩种类型编号
-     */
-    private int categoryCode;
+public class UpdateLotterySnOrTimeVo {
     /**
      * 彩种编号
      */
     private int lotteryTypeCode;
     /**
-     * 类型 1公休2维护
+     * 期号
      */
-    private int maintainType;
+    private long sn;
+    /**
+     *
+     */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date time;
 }

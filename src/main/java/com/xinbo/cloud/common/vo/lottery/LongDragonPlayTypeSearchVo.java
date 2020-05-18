@@ -9,24 +9,17 @@ import java.io.Serializable;
 
 /**
  * @author 汉斯
- * @date 2020/4/27 20:10
- * @desc 代理彩种类型关系表
+ * @date 2020/5/11 17:54
+ * @desc 长龙设置表
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProxyLotteryCategoryRelationSearchVo implements Serializable {
-    /**
-     * 商户编号
-     */
-    private String merchantCode;
+public class LongDragonPlayTypeSearchVo implements Serializable {
+
     /**
      * 彩种类型编号
      */
     private int categoryCode;
-    /**
-     * 开关   0.禁用  1.启用
-     */
-    private Boolean enable;
 }

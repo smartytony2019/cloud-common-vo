@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -16,11 +17,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LuckyTimeSearchVo {
-    /**
-     *
-     */
-    private int id;
+public class LuckyTimeSearchVo implements Serializable {
     /**
      * 序号
      */
@@ -35,12 +32,6 @@ public class LuckyTimeSearchVo {
      * 彩种编号
      */
     private int lotteryTypeCode ;
-
-    /**
-     * 封盘时间(提前多少票)
-     */
-    private int advanceSecond ;
-
     /**
      * 开始时间
      */
@@ -51,15 +42,7 @@ public class LuckyTimeSearchVo {
      */
     private Date endTime ;
     /**
-     * 运行时间
-     */
-    private Date addTime ;
-    /**
-     * 日期
-     */
-    private String day ;
-    /**
      * 是否统计
      */
-    private boolean isStatistics ;
+    private Boolean isStatistics ;
 }

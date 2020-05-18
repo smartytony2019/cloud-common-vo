@@ -5,6 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+import java.util.List;
+
 /**
  * @author 汉斯
  * @date 2020/4/28 11:11
@@ -14,11 +17,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryTypeTimeRulesVo {
+public class LotteryTypeTimeRulesVo implements Serializable {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种编号
      */
@@ -31,10 +34,6 @@ public class LotteryTypeTimeRulesVo {
      * 封盘时间(提前多少秒)
      */
     private int advanceSecond;
-    /**
-     * 时间规则
-     */
-    private String timeRules;
     /**
      * 提前开封盘时间
      */
@@ -51,4 +50,8 @@ public class LotteryTypeTimeRulesVo {
      * 最大开奖时长
      */
     private int maxLotteryDuration;
+    /**
+     * 时间列表
+     */
+    private List<TimeRulesVo> listVo;
 }

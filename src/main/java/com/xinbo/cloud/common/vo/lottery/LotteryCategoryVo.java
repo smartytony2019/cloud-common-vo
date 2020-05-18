@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @author 汉斯
  * @date 2020/4/27 20:08
@@ -14,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryCategoryVo {
+public class LotteryCategoryVo implements Serializable {
     /**
      * 主键
      */
@@ -38,7 +40,7 @@ public class LotteryCategoryVo {
     /**
      * 是否启用
      */
-    private boolean enable;
+    private int enable;
     /**
      * 简介
      */
@@ -70,7 +72,7 @@ public class LotteryCategoryVo {
     /**
      * 是否重复开奖号码 1.重复  0.不重复
      */
-    private int isRepeatNumber;
+    private boolean isRepeatNumber;
     /**
      * 供选球集合
      */

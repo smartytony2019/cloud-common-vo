@@ -1,10 +1,12 @@
 package com.xinbo.cloud.common.vo.lottery;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -16,11 +18,11 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class SpecialLotteryTimeVo {
+public class SpecialLotteryTimeVo implements Serializable {
     /**
      * 主键
      */
-    private Long id;
+    private long id;
     /**
      * 彩种编号
      */
@@ -32,18 +34,21 @@ public class SpecialLotteryTimeVo {
     /**
      * 期号
      */
-    private Long issue;
+    private long sn;
     /**
      * 销售开始时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date startTime;
     /**
      * 销售结束时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date endTime;
     /**
      * 开奖时间
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private Date openTime;
 
 }

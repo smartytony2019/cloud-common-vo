@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -19,7 +20,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryTypeVo {
+public class LotteryTypeVo implements Serializable {
     /**
      * 主键
      */
@@ -102,9 +103,9 @@ public class LotteryTypeVo {
      */
     private boolean isRepeatNumber;
     /**
-     * 开奖算法类型
+     * 应用算法Code
      */
-    private long algorithmId;
+    private int algorithmCode;
     /**
      * 期号销售时间类型  1.按年月日 2.年 3.累加
      */

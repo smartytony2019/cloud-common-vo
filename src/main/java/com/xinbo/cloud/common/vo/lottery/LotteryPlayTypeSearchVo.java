@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @author 汉斯
  * @date 2020/4/28 11:15
@@ -14,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryPlayTypeSearchVo {
+public class LotteryPlayTypeSearchVo implements Serializable {
     /**
      * 彩种类型编号
      */
@@ -59,4 +61,8 @@ public class LotteryPlayTypeSearchVo {
      * 是否是菜单栏
      */
     private Boolean display;
+    /**
+     * 父级ID
+     */
+    private Integer pid;
 }

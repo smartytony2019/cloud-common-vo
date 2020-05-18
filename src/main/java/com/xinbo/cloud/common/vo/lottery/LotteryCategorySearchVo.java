@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
 /**
  * @author 汉斯
  * @date 2020/4/27 20:08
@@ -13,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryCategorySearchVo {
+public class LotteryCategorySearchVo implements Serializable {
     /**
      * 彩种类型编号
      */

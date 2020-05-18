@@ -1,10 +1,12 @@
 package com.xinbo.cloud.common.vo.lottery;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -16,69 +18,85 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class LotteryPresetRecordVo {
+public class LotteryPresetRecordVo implements Serializable {
     /**
-     * 主键
+     * 预设记录ID
      */
-    private Long id;
+    private long id ;
+
     /**
-     * 商户编号
+     * 商户号
      */
-    private String merchantCode;
+    private String merchantCode ;
+
     /**
-     * 彩种类型编码
+     * 彩种code
      */
-    private int categoryCode;
-    /**
-     * 彩种编码
-     */
-    private int lotteryTypeCode;
+    private int lotteryTypeCode ;
+
     /**
      * 期号
      */
-    private Long issueNumber;
+    private long issueNumber ;
     /**
      * 预设号码集合
      */
-    private String presetNumberItem;
+    private String presetNumberItem ;
+
+    /**
+     * 彩种类型供选集合
+     */
+    private String selectBallItem ;
+
     /**
      * 销售开始时间
      */
-    private Date startTime;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date startTime ;
+
     /**
      * 销售结束时间
      */
-    private Date endTime;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date endTime ;
+
     /**
      * 封盘时间
      */
-    private Date sealTime;
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-    /**
-     * 创建人名称
-     */
-    private String createUserName;
-    /**
-     * 创建人id
-     */
-    private Long createUserId;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date sealTime ;
+
     /**
      * 预设结果号码
      */
-    private int presetResultNumber;
+    private int presetResultNumber ;
+
     /**
-     * 开奖结果
+     * 封盘时间
      */
-    private String lotteryResult;
+    private int advanceSecond ;
+
     /**
-     * 开奖时间
+     * 开奖结果是否允许重复号码
      */
-    private Date luckyTime;
+    private boolean isRepeatNumber ;
+    /**
+     * 开奖球数
+     */
+    private int ballNumber ;
     /**
      * 预设记录所属时间
      */
-    private Date recordTime;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date recordTime ;
+
+    /**
+     * 开奖结果
+     */
+    private String lotteryResult ;
+    /**
+     * 开奖时间
+     */
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date luckyTime ;
 }
