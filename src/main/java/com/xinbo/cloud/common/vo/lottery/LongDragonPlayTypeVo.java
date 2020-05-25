@@ -35,21 +35,21 @@ public class LongDragonPlayTypeVo implements Serializable {
     /**
      * 开大玩法
      */
-    private int bigPlayId;
+    private int bigPlayCode;
 
     /**
      * 开小玩法
      */
-    private int smallPlayId;
+    private int smallPlayCode;
 
     /**
      * 开单玩法
      */
-    private int singlePlayId;
+    private int singlePlayCode;
     /**
      * 开双玩法
      */
-    private int doublePlayId;
+    private int doublePlayCode;
     /**
      * 别名
      */
